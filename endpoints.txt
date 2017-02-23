@@ -1,0 +1,39 @@
+To add record :
+
+http://localhost:8080/RetailStore/rest/RetailManager/add
+
+POST Input :
+
+{"shopName":"ABC","address":"Mumbai,Maharashtra,India","postCode":"452015"}
+
+Output :
+
+{
+  "message": "Data has been added successfully.",
+  "success": false
+}
+
+-------------------------------------------------------
+
+To fetch record :
+
+http://localhost:8080/RetailStore/rest/RetailManager/get
+
+POST Input
+
+{"latitude":19.0759837,"longitude":72.8776559}
+
+Output :
+
+{
+  "message": "Data has been fetched successfully.",
+  "dto": {
+    "id": 1,
+    "shopName": "ABC",
+    "address": "Mumbai,Maharashtra,India",
+    "postCode": "452015",
+    "latitude": 19.0759837,
+    "longitude": 72.8776559
+  },
+  "success": true
+}
